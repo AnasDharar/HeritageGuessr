@@ -117,19 +117,19 @@ export default function Home() {
 
             <div className="sm:pl-6">
               {/* Massive Condensed Headline */}
-              <h1 className="font-condensed font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.4rem] tracking-tight text-[#111111] uppercase leading-[0.88] m-0">
-                INTELLIGENCE,<br />
-                DESIGNED<br />
-                FOR REAL WORK<span className="text-[#e53924]">.</span>
+              <h1 className="font-condensed font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.2rem] tracking-tight text-[#111111] uppercase leading-[0.88] m-0">
+                ANCIENT SITES,<br />
+                PINPOINTED<br />
+                BY DEDUCTION<span className="text-[#e53924]">.</span>
               </h1>
 
               {/* Taxonomy / Meta Sub-title */}
-              <div className="flex items-center gap-2 mt-8 text-xs font-mono-tech tracking-[0.2em] uppercase font-semibold text-[#111111]">
-                <span>AI</span>
+              <div className="flex flex-wrap items-center gap-2 mt-8 text-xs font-mono-tech tracking-[0.2em] uppercase font-semibold text-[#111111]">
+                <span>ARCHIVAL PLATES</span>
                 <span className="text-[#e53924]">✦</span>
-                <span>VISION</span>
+                <span>AI VISION CO-PILOT</span>
                 <span className="text-[#e53924]">✦</span>
-                <span>CARTOGRAPHY</span>
+                <span>OPEN CARTOGRAPHY</span>
               </div>
             </div>
 
@@ -137,8 +137,8 @@ export default function Home() {
             <div className="sm:pl-6 mt-12 sm:mt-16 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
               <div className="font-mono-tech text-[10px] tracking-widest text-[#737373] uppercase leading-relaxed">
                 HERITAGEGUESS<br />
-                / HISTORICAL ARCHIVES<br />
-                / 2026
+                / HISTORICAL GEOGRAPHY GAME<br />
+                / GEN Z EXPEDITIONS · 2026
               </div>
 
               <div>
@@ -147,7 +147,7 @@ export default function Home() {
                   disabled={!hydrated || busy}
                   onClick={begin}
                 >
-                  <span>{busy ? "STARTING EXPEDITION…" : "START EXPEDITION"}</span>
+                  <span>{busy ? "LAUNCHING EXPEDITION…" : "START EXPEDITION"}</span>
                   <span className="text-[#e53924]">→</span>
                 </button>
               </div>
@@ -215,32 +215,32 @@ export default function Home() {
             </span>
             <div className="h-8 w-[1px] bg-[#d4d2ca]" />
             <span className="font-mono-tech text-[9px] tracking-widest text-[#e53924] uppercase font-bold">
-              ABOUT HERITAGEGUESS
+              THE CORE MISSION
             </span>
           </div>
 
           {/* Cell 2: Big Condensed Manifesto */}
           <div className="md:col-span-4 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-[#d4d2ca] flex items-center">
             <h2 className="font-condensed font-bold text-2xl sm:text-3xl text-[#111111] uppercase leading-tight m-0">
-              WE BUILD SYSTEMS THAT MAKE HISTORICAL GEOGRAPHY FEEL IMMERSIVE.
+              RESCUING ANCIENT GLOBAL HERITAGE FROM DRY TEXTBOOKS FOR GEN Z.
             </h2>
           </div>
 
           {/* Cell 3: Technical Statement */}
           <div className="md:col-span-3 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-[#d4d2ca] flex flex-col justify-center">
             <p className="text-xs sm:text-sm text-[#444444] leading-relaxed mb-3">
-              HeritageGuess is an AI-powered historical geography platform. We combine archival 19th-century photography, computer vision reasoning, and geodesic cartography to challenge how explorers observe and deduce ancient architecture.
+              HeritageGuess transforms passive historical memorization into an interactive, high-stakes game of architectural deduction. Study 19th-century survey plates, interrogate an AI field assistant for clues, and pin ancient sites on full-screen world maps.
             </p>
             <span className="font-mono-tech text-[9px] tracking-wider text-[#111111] uppercase font-bold">
-              WE COMBINE ARCHIVAL PLATES, AI REASONING, AND GEOGRAPHIC PRECISION.
+              PASSIVE MEMORIZATION OUT · ACTIVE DEDUCTIVE EXPEDITIONS IN.
             </span>
           </div>
 
           {/* Cell 4: Location Badge & Crosshair */}
           <div className="md:col-span-2 p-6 sm:p-8 flex flex-col justify-between items-start bg-[#f0eee6]">
             <div className="font-mono-tech text-[9px] tracking-widest text-[#737373] uppercase leading-tight">
-              BASED IN INDIA<br />
-              EXPLORED GLOBALLY
+              COMMUNITY CURATED<br />
+              100% OPEN SOURCE
             </div>
             <div className="mt-6 self-end">
               <Crosshair className="w-5 h-5 text-[#e53924]" />
@@ -250,17 +250,17 @@ export default function Home() {
         </section>
 
         {/* ==================================================================== */}
-        {/* SECTION: WHAT WE INVESTIGATE (MODULAR SERVICE ROWS)                  */}
+        {/* SECTION: THE EXPEDITIONS (ARCHAEOLOGICAL MODULES)                   */}
         {/* ==================================================================== */}
         <section className="grid grid-cols-1 md:grid-cols-12 border-b border-[#d4d2ca]">
           
           {/* Left Column Label */}
           <div className="md:col-span-2 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-[#d4d2ca] flex md:flex-col justify-between">
             <span className="font-mono-tech text-[10px] tracking-widest text-[#e53924] uppercase font-bold">
-              WHAT WE DO
+              THE EXPEDITIONS
             </span>
             <div className="hidden md:block font-mono-tech text-[9px] tracking-widest text-[#888888] uppercase">
-              EXPEDITION MODULES
+              ARCHAEOLOGICAL DOMAINS
             </div>
           </div>
 
@@ -273,13 +273,13 @@ export default function Home() {
                 01
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                ROCK-CUT TEMPLE ARCHITECTURE
+                ROCK-CUT CLIFF MONASTERIES
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Analyzing monolithic cliff excavations, chaityas, and viharas across Deccan India.
+                Deciphering chaityas, viharas, and monolithic basalt excavations across Ajanta, Ellora, and Deccan plateaus.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
-                EXP / 01 <span className="text-[#e53924]">+</span>
+                SURVEY / 01 <span className="text-[#e53924]">+</span>
               </div>
             </div>
 
@@ -289,13 +289,13 @@ export default function Home() {
                 02
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                VIJAYANAGARA & HAMPI CIVILIZATION
+                VIJAYANAGARA & HAMPI EMPIRE
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Deciphering mandapas, musical pillars, and stone chariots from 1880s survey plates.
+                Analyzing stone chariot shrines, pillared mandapas, and Tungabhadra boulder terrain from 1880s survey plates.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
-                EXP / 02 <span className="text-[#e53924]">+</span>
+                SURVEY / 02 <span className="text-[#e53924]">+</span>
               </div>
             </div>
 
@@ -305,13 +305,13 @@ export default function Home() {
                 03
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                MUGHAL & RAJPUT FORTS
+                MUGHAL & RAJPUT CITADELS
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Examining jharokhas, cusped arches, and sandstone bastions from historical surveys.
+                Examining red sandstone bastions, cusped arch geometry, and hilltop ramparts across northern and western India.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
-                EXP / 03 <span className="text-[#e53924]">+</span>
+                SURVEY / 03 <span className="text-[#e53924]">+</span>
               </div>
             </div>
 
@@ -321,13 +321,13 @@ export default function Home() {
                 04
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                ANCIENT STEPWELLS & BAOLIS
+                SUBTERRANEAN STEPWELLS & BAOLIS
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Mapping subterranean water architecture, geometric pavilions, and stone staircases.
+                Mapping multi-level inverted pyramid pavilions, water cisterns, and subterranean geometric architecture.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
-                EXP / 04 <span className="text-[#e53924]">+</span>
+                SURVEY / 04 <span className="text-[#e53924]">+</span>
               </div>
             </div>
 
@@ -337,10 +337,10 @@ export default function Home() {
                 05
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                AI VISION INVESTIGATION
+                GUARDRAILED AI FIELD ASSISTANT
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Progressive architectural deduction without leaking location names or coordinates.
+                Interrogate Groq & Llama 3.3 for architectural motifs, rooflines, and era clues without spoiling coordinates.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
                 EXP / 05 <span className="text-[#e53924]">+</span>
@@ -353,10 +353,10 @@ export default function Home() {
                 06
               </div>
               <div className="sm:col-span-5 font-condensed font-bold text-lg sm:text-xl text-[#111111] uppercase tracking-wide">
-                GEODESIC PINPOINT ACCURACY
+                MATHEMATICAL HAVERSINE SCORING
               </div>
               <div className="sm:col-span-4 text-xs text-[#555555]">
-                Mathematical calculation of geodesic deviation and exponential proximity scoring.
+                Exact spherical trigonometric geodesic deviation awarding up to 5,000 points based on kilometer proximity.
               </div>
               <div className="sm:col-span-2 text-right font-mono-tech text-[10px] tracking-widest text-[#888888]">
                 EXP / 06 <span className="text-[#e53924]">+</span>
@@ -372,11 +372,11 @@ export default function Home() {
         {/* ==================================================================== */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-b border-[#d4d2ca]">
           
-          {/* Bento Cell 1: High Contrast Architectural Geometry */}
+          {/* Bento Cell 1: High Contrast Archival Photograph */}
           <div className="p-4 border-b sm:border-b-0 sm:border-r border-[#d4d2ca] bg-[#111111] text-[#ffffff] flex flex-col justify-between min-h-[260px] relative overflow-hidden">
             <div className="flex justify-between font-mono-tech text-[9px] tracking-widest text-[#a3a3a3]">
-              <span>PLATE_01</span>
-              <span>HAMPI</span>
+              <span>ARCHIVE_PLATE</span>
+              <span>HAMPI // 1880</span>
             </div>
             <div className="my-4 relative">
               <div className="w-6 h-28 bg-[#e53924] absolute left-2 top-2" />
@@ -388,76 +388,83 @@ export default function Home() {
               />
             </div>
             <span className="font-condensed text-xs uppercase tracking-wider text-[#a3a3a3]">
-              STONE MANTAPA STRUCTURE
+              19TH CENTURY GLASS SURVEY PLATE
             </span>
           </div>
 
-          {/* Bento Cell 2: CAD Wireframe / AI Telemetry */}
+          {/* Bento Cell 2: AI Co-Pilot Telemetry */}
           <div className="p-4 border-b sm:border-b-0 lg:border-r border-[#d4d2ca] bg-[#181818] text-[#ffffff] flex flex-col justify-between min-h-[260px]">
             <div className="flex justify-between font-mono-tech text-[9px] tracking-widest text-[#888888]">
-              <span>AI_TELEMETRY</span>
-              <span className="text-[#e53924]">78% MATCH</span>
+              <span>AI_CO-PILOT</span>
+              <span className="text-[#e53924]">SHIELDS ACTIVE</span>
             </div>
             <div className="p-4 my-2 border border-[#333333] bg-[#111111] font-mono-tech text-[10px] text-[#888888] space-y-1">
-              <p className="text-[#e53924] font-bold">ARC_DETECTION: POSITIVE</p>
-              <p>ROOFLINE: MULTI-TIER DRAVIDIAN</p>
-              <p>WEATHERING: C. 1880 DEEN DAYAL</p>
-              <p>COORD_DELTA: 14.8 KM</p>
+              <p className="text-[#e53924] font-bold">ROOFLINE: MULTI-TIER DRAVIDIAN</p>
+              <p>ERA: 15TH-16TH CENTURY CE</p>
+              <p>MASONRY: INTERLOCKING GRANITE</p>
+              <p>ANTI_CHEAT: NO LOCATION SPOILERS</p>
             </div>
             <span className="font-condensed text-xs uppercase tracking-wider text-[#888888]">
-              COMPUTER VISION ANALYSIS
+              GUARDRAILED VISION INFERENCE
             </span>
           </div>
 
-          {/* Bento Cell 3: Clean Monolithic Carved Artefact */}
+          {/* Bento Cell 3: OpenStreetMap Cartography */}
           <div className="p-4 border-b sm:border-b-0 sm:border-r border-[#d4d2ca] bg-[#e8e6df] text-[#111111] flex flex-col justify-between min-h-[260px]">
             <div className="flex justify-between font-mono-tech text-[9px] tracking-widest text-[#737373]">
-              <span>SURVEY_SPEC</span>
-              <span>CARVING</span>
+              <span>OPEN_TILES</span>
+              <span>OPENSTREETMAP</span>
             </div>
             <div className="py-6 text-center">
-              <div className="w-16 h-24 mx-auto border-2 border-[#111111] bg-[#d8d6ce] flex items-center justify-center font-condensed font-bold text-2xl">
-                VIT
+              <div className="w-20 h-20 mx-auto border-2 border-[#111111] bg-[#d8d6ce] flex flex-col items-center justify-center font-condensed font-bold text-xl">
+                <span>OSM</span>
+                <span className="text-[9px] font-mono-tech font-normal text-[#666666]">COMMUNITY</span>
               </div>
             </div>
             <span className="font-condensed text-xs uppercase tracking-wider text-[#111111]">
-              MONOLITHIC BASALT ARCHAEOLOGY
+              OPEN-ACCESS CARTOGRAPHY
             </span>
           </div>
 
-          {/* Bento Cell 4: Topographical Landscape with Red Target */}
+          {/* Bento Cell 4: Haversine Geodesic Projection */}
           <div className="p-4 bg-[#111111] text-[#ffffff] flex flex-col justify-between min-h-[260px] relative">
             <div className="flex justify-between font-mono-tech text-[9px] tracking-widest text-[#a3a3a3]">
-              <span>TERRAIN_MAP</span>
+              <span>HAVERSINE</span>
               <Crosshair className="w-4 h-4 text-[#e53924]" />
             </div>
             <div className="my-auto text-center relative py-6">
               <div className="w-12 h-12 bg-[#e53924] mx-auto flex items-center justify-center font-mono-tech font-bold text-sm text-[#ffffff]">
                 PIN
               </div>
+              <div className="mt-2 font-mono-tech text-[9px] text-[#888888]">
+                EXPONENTIAL DECAY SCORING
+              </div>
             </div>
             <span className="font-condensed text-xs uppercase tracking-wider text-[#a3a3a3]">
-              CARTOGRAPHIC PROJECTION
+              GEODESIC DISTANCE CALCULATION
             </span>
           </div>
 
         </section>
 
         {/* ==================================================================== */}
-        {/* SECTION: OUR PROCESS (3 LINEAR BOXES WITH ARROWS)                    */}
+        {/* SECTION: 4-STEP EXPEDITION LOOP                                      */}
         {/* ==================================================================== */}
         <section className="grid grid-cols-1 md:grid-cols-12 border-b border-[#d4d2ca]">
           
           <div className="md:col-span-2 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-[#d4d2ca]">
             <span className="font-mono-tech text-[10px] tracking-widest text-[#e53924] uppercase font-bold">
-              OUR PROCESS
+              THE EXPEDITION LOOP
             </span>
+            <div className="hidden md:block font-mono-tech text-[9px] tracking-widest text-[#888888] uppercase mt-2">
+              4-STEP DISCOVERY
+            </div>
           </div>
 
-          <div className="md:col-span-10 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#d4d2ca]">
+          <div className="md:col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#d4d2ca]">
             
             {/* Step 01 */}
-            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[200px]">
+            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="font-condensed font-bold text-4xl text-[#111111] mb-2 flex items-center justify-between">
                   <span>01</span>
@@ -467,16 +474,16 @@ export default function Home() {
                   INVESTIGATE
                 </h3>
                 <p className="text-xs text-[#555555] leading-relaxed">
-                  Question visible architectural clues, rooflines, and weathering with the AI assistant without leaking location secrets.
+                  Study 19th-century survey plates. Interrogate the AI field assistant for architectural hints without location spoilers.
                 </p>
               </div>
               <span className="font-mono-tech text-[9px] tracking-widest text-[#888888] mt-4">
-                STEP / 01
+                STAGE / 01
               </span>
             </div>
 
             {/* Step 02 */}
-            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[200px]">
+            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="font-condensed font-bold text-4xl text-[#111111] mb-2 flex items-center justify-between">
                   <span>02</span>
@@ -486,29 +493,48 @@ export default function Home() {
                   PINPOINT
                 </h3>
                 <p className="text-xs text-[#555555] leading-relaxed">
-                  Calibrate your geographic reasoning and drop your pin upon the full-screen topographical map of the Indian subcontinent.
+                  Calibrate your spatial reasoning and drop your pin upon the full-screen interactive OpenStreetMap world map.
                 </p>
               </div>
               <span className="font-mono-tech text-[9px] tracking-widest text-[#888888] mt-4">
-                STEP / 02
+                STAGE / 02
               </span>
             </div>
 
             {/* Step 03 */}
-            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[200px]">
+            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[220px]">
               <div>
-                <div className="font-condensed font-bold text-4xl text-[#111111] mb-2">
-                  03
+                <div className="font-condensed font-bold text-4xl text-[#111111] mb-2 flex items-center justify-between">
+                  <span>03</span>
+                  <span className="text-xl text-[#737373]">→</span>
                 </div>
                 <h3 className="font-condensed font-bold text-2xl text-[#111111] uppercase tracking-wide mb-2">
                   REVEAL
                 </h3>
                 <p className="text-xs text-[#555555] leading-relaxed">
-                  Calculate geodesic distance error, claim your expedition points, and explore curated architectural slide chronicles.
+                  Calculate great-circle geodesic error in kilometers and claim up to 5,000 points based on exponential proximity.
                 </p>
               </div>
               <span className="font-mono-tech text-[9px] tracking-widest text-[#888888] mt-4">
-                STEP / 03
+                STAGE / 03
+              </span>
+            </div>
+
+            {/* Step 04 */}
+            <div className="p-6 sm:p-8 flex flex-col justify-between min-h-[220px]">
+              <div>
+                <div className="font-condensed font-bold text-4xl text-[#111111] mb-2">
+                  04
+                </div>
+                <h3 className="font-condensed font-bold text-2xl text-[#111111] uppercase tracking-wide mb-2">
+                  DISCOVER
+                </h3>
+                <p className="text-xs text-[#555555] leading-relaxed">
+                  Immerse in full-screen Keynote-style presentation decks exploring the monument&apos;s history, construction, and cultural legacy.
+                </p>
+              </div>
+              <span className="font-mono-tech text-[9px] tracking-widest text-[#888888] mt-4">
+                STAGE / 04
               </span>
             </div>
 
@@ -535,48 +561,48 @@ export default function Home() {
 
           <div className="md:col-span-8 p-6 sm:p-8 divide-y divide-[#d4d2ca]/60">
             
-            <div className="py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-condensed font-bold text-base text-[#111111] tracking-wide uppercase">
-                <span className="text-[#e53924] mr-2">01</span> PURPOSE-FIRST GEOGRAPHY
+                <span className="text-[#e53924] mr-2">01</span> PURPOSE-BUILT FOR GEN Z &amp; DIGITAL NATIVES
               </span>
               <span className="text-xs text-[#666666]">
-                Built with historical rigor and archaeological evidence, not random guessing.
+                Transforming dry academic monographs into an adrenaline-fueled visual deduction adventure.
               </span>
             </div>
 
-            <div className="py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-condensed font-bold text-base text-[#111111] tracking-wide uppercase">
-                <span className="text-[#e53924] mr-2">02</span> AI VISION + PROMPT SHIELDS
+                <span className="text-[#e53924] mr-2">02</span> 100% COMMUNITY-OWNED OPEN SOURCE
               </span>
               <span className="text-xs text-[#666666]">
-                Intelligent vision reasoning helping you observe without spoiling monument names.
+                Built on OpenStreetMap, Leaflet, Wikimedia Commons, Next.js, and Meta Llama 3.3.
               </span>
             </div>
 
-            <div className="py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-condensed font-bold text-base text-[#111111] tracking-wide uppercase">
-                <span className="text-[#e53924] mr-2">03</span> AUTHENTIC ARCHIVAL PLATES
+                <span className="text-[#e53924] mr-2">03</span> ANTI-CHEAT CRYPTOGRAPHIC SESSIONS
               </span>
               <span className="text-xs text-[#666666]">
-                Genuine 19th-century photographs from Lala Deen Dayal and imperial surveys.
+                Zero client location leaks; every round is signed with server-side HMAC-SHA256 tokens.
               </span>
             </div>
 
-            <div className="py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-condensed font-bold text-base text-[#111111] tracking-wide uppercase">
-                <span className="text-[#e53924] mr-2">04</span> MATHEMATICAL PRECISION
+                <span className="text-[#e53924] mr-2">04</span> AUTHENTIC 19TH-CENTURY GLASS PLATES
               </span>
               <span className="text-xs text-[#666666]">
-                Exact Haversine geodesic formulas computing real kilometer deviations.
+                Genuine historical survey photographs from Lala Deen Dayal and imperial archaeological excavations.
               </span>
             </div>
 
-            <div className="py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="font-condensed font-bold text-base text-[#111111] tracking-wide uppercase">
-                <span className="text-[#e53924] mr-2">05</span> ARCHITECTURAL PRESERVATION
+                <span className="text-[#e53924] mr-2">05</span> FULL-SCREEN CINEMATIC DECKS
               </span>
               <span className="text-xs text-[#666666]">
-                Preserving public knowledge of threatened, ancient, and rock-cut heritage.
+                Rich, interactive presentation chronicles unlocked after every round to build genuine cultural appreciation.
               </span>
             </div>
 
@@ -585,21 +611,20 @@ export default function Home() {
         </section>
 
         {/* ==================================================================== */}
-        {/* FINAL HERO CTA: "BUILD WHAT YOUR BUSINESS ACTUALLY NEEDS."           */}
-        {/* Transformed into: "TEST WHAT YOUR HISTORICAL INTUITION CAN SOLVE."   */}
+        {/* FINAL HERO CTA: "TEST WHAT YOUR HISTORICAL DEDUCTION CAN SOLVE"      */}
         {/* ==================================================================== */}
         <section className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
           {/* Big Bold Final Headline */}
           <div className="lg:col-span-5 p-6 sm:p-10 md:p-12 border-b lg:border-b-0 lg:border-r border-[#d4d2ca] flex flex-col justify-between">
             <h2 className="font-condensed font-bold text-4xl sm:text-5xl md:text-6xl text-[#111111] uppercase leading-[0.9] m-0">
-              TEST WHAT<br />
-              YOUR HISTORICAL<br />
-              EYE CAN SOLVE<span className="text-[#e53924]">.</span>
+              CAN YOU PINPOINT<br />
+              ANCIENT HISTORY<br />
+              FROM EVIDENCE<span className="text-[#e53924]">?</span>
             </h2>
 
             <div className="mt-8 font-mono-tech text-[10px] text-[#737373] tracking-widest uppercase">
-              INVESTIGATE • PINPOINT • REVEAL
+              INVESTIGATE • PINPOINT • REVEAL • DISCOVER
             </div>
           </div>
 
@@ -611,20 +636,20 @@ export default function Home() {
               disabled={!hydrated || busy}
               onClick={begin}
             >
-              <span>{busy ? "STARTING…" : "START EXPEDITION"}</span>
+              <span>{busy ? "LAUNCHING…" : "START EXPEDITION"}</span>
               <span className="text-[#e53924]">→</span>
             </button>
-            <div className="mt-4 font-mono-tech text-[9px] text-[#777777] tracking-widest uppercase">
-              5 MONUMENTS · ZERO TIMEOUTS
+            <div className="mt-4 font-mono-tech text-[9px] text-[#888888] tracking-widest uppercase">
+              100% FREE &amp; OPEN SOURCE · NO SIGN-UP
             </div>
           </div>
 
           {/* Right Column: Mission Mark */}
           <div className="lg:col-span-2 p-6 sm:p-8 bg-[#f0eee6] flex flex-col justify-between items-start">
             <div className="font-mono-tech text-[9px] tracking-widest text-[#737373] uppercase leading-tight">
-              LET&apos;S REDISCOVER<br />
-              SOMETHING<br />
-              TIMELESS.
+              PRESERVING HERITAGE<br />
+              FOR DIGITAL<br />
+              NATIVES.
             </div>
             <div className="mt-8 self-end">
               <Crosshair className="w-6 h-6 text-[#e53924]" />
