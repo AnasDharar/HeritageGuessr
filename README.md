@@ -52,7 +52,7 @@ HeritageGuess is **proudly and unapologetically open-source**. Every piece of th
 * **[TypeScript](https://www.typescriptlang.org/):** Static type-safety across all game rounds, API contracts, and geodesic math.
 
 ### 🧠 Open-Weights AI Reasoning
-* **[Meta Llama 3.3](https://ai.meta.com/llama/):** Open-weights frontier model orchestrated via the [Groq API](https://groq.com/) for lightning-fast inference, configured with strict prompt shielding to prevent location leakage and block non-architectural injection queries.
+* **[Qwen 3.8-27b](https://qwen.tongyi.com/):** Open-weights frontier model orchestrated via the [Groq API](https://groq.com/) for lightning-fast inference, configured with strict prompt shielding to prevent location leakage and block non-architectural injection queries.
 
 ---
 
