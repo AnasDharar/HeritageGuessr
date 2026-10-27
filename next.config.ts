@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
-      "*.css": {
+      // Only process app CSS through Tailwind — NOT vendor CSS in node_modules
+      "app/**/*.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },

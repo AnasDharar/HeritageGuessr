@@ -1,0 +1,175 @@
+
+{
+  "images": [
+    {
+      "id": 1,
+      "name": "Entrance porch to the Kalyana Mandapa of the Vitthala Temple",
+      "location": "Hampi, Vijayanagara, India",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Entrance_porch_to_the_Kalyana_Mandapa_of_the_Vitthala_Temple%2C_Hampi%2C_Vijayanagara_1880_photo.jpg/960px-Entrance_porch_to_the_Kalyana_Mandapa_of_the_Vitthala_Temple%2C_Hampi%2C_Vijayanagara_1880_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "Entrance porch to the Kalyana Mandapa of the Vitthala Temple, Hampi, Vijayanagara 1880 photo.jpg",
+      "year": 1880,
+      "coordinates": {
+        "latitude": 15.3350,
+        "longitude": 76.4600
+      },
+      "description": "The entrance porch to the Kalyana Mandapa of the Vitthala Temple in Hampi, photographed around 1880.",
+      "difficulty": "hard",
+      "slide-data": [
+        {
+          "title": "Vitthala Temple: A Legacy in Stone",
+          "content": "Hampi was the capital of the Vijayanagara Empire, one of the most influential kingdoms in southern India. The Vitthala Temple complex is renowned for its elaborate stone architecture. Dedicated to Vitthala, a form of Vishnu, the complex reflects the religious and artistic traditions of the empire.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Chariot_of_Vitthala_Temple_Hampi.jpg?width=1200",
+          "image_caption": "The celebrated stone chariot in the Vitthala Temple complex."
+        },
+        {
+          "title": "Architecture That Tells a Story",
+          "content": "The Kalyana Mandapa is a pillared pavilion associated with ceremonial functions. Its carved columns demonstrate the skill of Vijayanagara stoneworkers. The wider Vitthala complex also contains ornate mandapas, a main shrine, and a famous stone chariot that resembles a processional vehicle.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampi_-_Vittala_Temple_-_Kalyana_Mandapa_Columns.jpg?width=1200",
+          "image_caption": "Intricately carved columns of the Kalyana Mandapa, photographed in 2023."
+        },
+        {
+          "title": "A Monument That Survives",
+          "content": "Today, the Vitthala Temple is part of the UNESCO-listed Group of Monuments at Hampi. Its surviving pavilions and sculptures allow visitors to study the artistic achievements of the Vijayanagara period. The ruins also remind us that preserving heritage means protecting both individual monuments and the larger landscape around them.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_stone_chariot_from_the_rear_of_main_mantapa_in_Vitthala_temple_complex_in_Hampi.JPG?width=1200",
+          "image_caption": "A present-day view of the Vitthala Temple complex and its stone chariot."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Deowara Caves",
+      "location": "Ellora, Maharashtra, India",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Deowara_Caves%2C_Ellora%3B_a_photoby_Lala_Deen_Dayal%2C_1880%27s.jpg/960px-Deowara_Caves%2C_Ellora%3B_a_photoby_Lala_Deen_Dayal%2C_1880%27s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "Deowara Caves, Ellora; a photo by Lala Deen Dayal, 1880's.jpg",
+      "year": 1880,
+      "coordinates": {
+        "latitude": 20.0167,
+        "longitude": 75.1667
+      },
+      "description": "The Deowara Caves at Ellora, Maharashtra, photographed by Lala Deen Dayal in the 1880s.",
+      "difficulty": "medium",
+      "slide-data": [
+        {
+          "title": "Ellora: Sacred Spaces Carved from Rock",
+          "content": "The Ellora Caves are a remarkable group of rock-cut Buddhist, Hindu, and Jain monuments in Maharashtra. Created over several centuries, they preserve evidence of different religious traditions sharing a monumental landscape. Rather than constructing buildings from separate blocks, artisans carved temples, halls, and sculptures directly into the rock.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kailash_Temple_of_Ellora_in_the_1880s_%282%29.jpg?width=1200",
+          "image_caption": "A nineteenth-century photograph of the Kailasa Temple at Ellora."
+        },
+        {
+          "title": "An Architecture Carved from a Mountain",
+          "content": "Ellora demonstrates the extraordinary possibilities of rock-cut architecture. The Kailasa Temple, in Cave 16, is especially remarkable: its monumental form was excavated from the surrounding rock. Other caves contain pillars, sculpted deities, halls, and detailed reliefs. Each monument offers clues about the religious and artistic traditions of its makers.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_entrance_of_Indra_Sabha%2C_by_Thomas_Daniell_and_James_Wales%2C_1803.jpg?width=1200",
+          "image_caption": "A historical artistic view of the entrance to Indra Sabha at Ellora."
+        },
+        {
+          "title": "A Shared Heritage",
+          "content": "Ellora is recognized as a UNESCO World Heritage Site. Its caves preserve a long history of artistic expression and religious life. The complex is not a single monument built at one moment; it is a collection of works created across different periods. Protecting it means safeguarding sculptures, architectural surfaces, and the rock landscape itself.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kailash_temple%2CEllora%2C1880_%281%29.jpg?width=1200",
+          "image_caption": "A historical view of the Kailasa Cave temple, photographed in the 1880s."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Khas Mahal of Agra Fort",
+      "location": "Agra, Uttar Pradesh, India",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Khas_Mahal_of_Agra_Fort_in_1875.jpg/960px-Khas_Mahal_of_Agra_Fort_in_1875.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "Khas Mahal of Agra Fort in 1875.jpg",
+      "year": 1875,
+      "coordinates": {
+        "latitude": 27.1767,
+        "longitude": 78.0083
+      },
+      "description": "The Khas Mahal of Agra Fort, photographed in 1875.",
+      "difficulty": "hard",
+      "slide-data": [
+        {
+          "title": "Khas Mahal: A Royal Residence",
+          "content": "The Khas Mahal is a palace within Agra Fort, the historic Mughal stronghold on the banks of the Yamuna River. Associated with Emperor Shah Jahan, the palace formed part of the imperial residential complex. Its design combines royal living spaces with the refined aesthetics of Mughal architecture.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Agra_Fort_-_Khas_Mahal.jpg?width=1200",
+          "image_caption": "A present-day view of the Khas Mahal within Agra Fort."
+        },
+        {
+          "title": "Marble, Gardens, and Imperial Design",
+          "content": "The Khas Mahal is known for its use of white marble and its relationship with the surrounding palace gardens and courtyards. Mughal palace architecture often combined carefully arranged spaces, decorative surfaces, and views of gardens or water. These features expressed both aesthetic refinement and the authority of the imperial court.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Khas_mahal_%2CAgra_fort.JPG?width=1200",
+          "image_caption": "The Khas Mahal, part of the residential architecture of Agra Fort."
+        },
+        {
+          "title": "Reading History in a Photograph",
+          "content": "The 1875 photograph offers a historical record of the palace long after the height of the Mughal Empire. Comparing it with present-day views can help us examine which architectural elements remain visible. Agra Fort is now a UNESCO World Heritage Site, and its palace buildings preserve evidence of changing imperial life and architectural taste.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Khas_Mahal_of_Agra_Fort_in_1875.jpg?width=1200",
+          "image_caption": "The Khas Mahal as recorded in a photograph dated 1875."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Taj Mahal",
+      "location": "Agra, Uttar Pradesh, India",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Felice_Beato_Taj_Mahal_1865_%2801%29.jpg/960px-Felice_Beato_Taj_Mahal_1865_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "Felice Beato Taj Mahal 1865 (01).jpg",
+      "year": 1865,
+      "coordinates": {
+        "latitude": 27.1751,
+        "longitude": 78.0421
+      },
+      "description": "The Taj Mahal in Agra, India, photographed by Felice Beato in 1865.",
+      "difficulty": "easy",
+      "slide-data": [
+        {
+          "title": "Taj Mahal: A Monument to Memory",
+          "content": "The Taj Mahal was commissioned by Mughal emperor Shah Jahan in memory of Mumtaz Mahal. Built in Agra during the seventeenth century, it is a mausoleum and one of the most recognized examples of Mughal architecture. Its white marble surfaces, balanced composition, and garden setting make it a landmark of world heritage.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_%28front_view%29.jpg?width=1200",
+          "image_caption": "A frontal view of the Taj Mahal photographed by Felice Beato in 1859."
+        },
+        {
+          "title": "Symmetry and Craftsmanship",
+          "content": "The central domed mausoleum is framed by four minarets and surrounded by a carefully planned garden. Decorative details include calligraphy, geometric patterns, and inlaid stonework. The design brings together architectural traditions developed across the Mughal world, creating a carefully balanced composition around the tomb chamber.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Felice_Beato_%28British%2C_born_Italy_-_The_Taj_Mahal_with_the_Fountains_-_Google_Art_Project.jpg?width=1200",
+          "image_caption": "A historical view of the Taj Mahal with its garden fountains."
+        },
+        {
+          "title": "The Taj Mahal Through Time",
+          "content": "Felice Beato photographed the Taj Mahal in the nineteenth century, creating a visual record of the monument before modern tourism. Comparing early photographs with contemporary views reveals changes in photography and the ways people experience the site. The Taj Mahal is a UNESCO World Heritage Site and remains an important monument of India's cultural heritage.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Taj_Mahal%2C_Agra%2C_India._Photograph_by_Felice_Beato%2C_ca._Wellcome_V0037607.jpg?width=1200",
+          "image_caption": "Another historical photograph of the Taj Mahal attributed to Felice Beato."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Qutb Minar",
+      "location": "Delhi, India",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Kutub_Minar_-_An_albumen_print_of_the_site_from_the_1880%27s_-_another_such_view.jpg/960px-Kutub_Minar_-_An_albumen_print_of_the_site_from_the_1880%27s_-_another_such_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "Kutub Minar - An albumen print of the site from the 1880's - another such view.jpg",
+      "year": 1880,
+      "coordinates": {
+        "latitude": 28.5244,
+        "longitude": 77.1855
+      },
+      "description": "Qutb Minar in Delhi, India, in an albumen photograph from the 1880s.",
+      "difficulty": "medium",
+      "slide-data": [
+        {
+          "title": "Qutb Minar: A Tower Through Centuries",
+          "content": "Qutb Minar is a monumental minaret in Delhi and a defining feature of the Qutb complex. Construction began under Qutb-ud-din Aibak around the end of the twelfth century and was continued by later rulers, including Iltutmish. The tower reflects the architectural and political history of the early Delhi Sultanate.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kuttull_Minor%2C_Delhi._The_Qutb_Minar%2C_an_aquatint_by_Thomas_Daniell%2C_1805.jpg?width=1200",
+          "image_caption": "An early nineteenth-century artistic view of Qutb Minar by Thomas Daniell."
+        },
+        {
+          "title": "Stonework and Design",
+          "content": "The tower is built primarily from red and buff sandstone, with marble used in parts of the complex. Its storeys are marked by projecting balconies and bands of carved decoration and inscriptions. The changing profiles of its fluted sections create a distinctive silhouette that has made it one of Delhi's most recognizable historic structures.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kutub_Minar_-_A_photo_by_Francis_Frith%2C_c.1880.jpg?width=1200",
+          "image_caption": "Qutb Minar in a historical photograph by Francis Frith, circa 1880."
+        },
+        {
+          "title": "A Monument Preserved",
+          "content": "Qutb Minar is part of the UNESCO-listed Qutb Minar and its Monuments complex. The surrounding site includes other historic structures that help explain the development of architecture in Delhi across different periods. Historical photographs preserve earlier views of the complex and allow us to compare its appearance with the monument seen today.",
+          "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kutub_Minar_-_A_similar_view_attributed_to_Beato%2C_1858.jpg?width=1200",
+          "image_caption": "An early historical photograph attributed to Felice Beato, dated around 1858."
+        }
+      ]
+    }
+  ]
+}

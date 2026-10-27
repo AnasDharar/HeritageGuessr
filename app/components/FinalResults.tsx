@@ -1,0 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { useGameStore } from "./GameStore";
+export default function FinalResults(){const router=useRouter(),{rounds,hydrated,total,reset}=useGameStore();const completed=rounds.filter(r=>r.result);useEffect(()=>{if(hydrated&&!completed.length)router.replace("/")},[hydrated,completed.length,router]);if(!hydrated||!completed.length)return <main className="shell">Loading results…</main>;return <main className="shell"><section className="card hero"><p className="eyebrow">EXPEDITION COMPLETE</p><h1>{total.toLocaleString()} points</h1><p>You completed {completed.length} historical locations.</p><div className="result-list">{completed.map(round=><div key={round.id}><span>{round.result!.location.name}</span><b>{round.result!.score.toLocaleString()} pts · {round.result!.distance.toFixed(0)} km</b></div>)}</div><button className="primary" onClick={()=>{reset();router.push("/")}}>Play again</button></section></main>}
