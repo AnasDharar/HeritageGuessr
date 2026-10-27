@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "node scripts/compile-css.mjs && next dev",
     "build": "node scripts/compile-css.mjs && next build",
