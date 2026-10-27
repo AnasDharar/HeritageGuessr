@@ -3,8 +3,9 @@ import "./globals.css";
 import { GameStoreProvider } from "./components/GameStore";
 
 export const metadata: Metadata = {
-  title: "HeritageGuess | An Expedition into Historical Geography",
-  description: "An AI-powered historical geography and architectural heritage game inspired by India's timeless monuments.",
+  title: "HeritageGuess | Historical Geography & Archival Discovery",
+  description:
+    "A brutalist, minimalist historical geography game combining archival 19th-century photography with AI vision and cartographic precision.",
 };
 
 export default function RootLayout({
@@ -14,7 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-[#240508] text-[#f8f5ee]">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/leaflet/leaflet.css" />
+      </head>
+      <body className="min-h-full flex flex-col bg-[#f5f4f0] text-[#111111] font-sans antialiased">
         <GameStoreProvider>{children}</GameStoreProvider>
       </body>
     </html>

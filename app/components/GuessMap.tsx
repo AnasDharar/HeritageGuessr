@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { CircleMarker, MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import type { Guess } from "@/lib/types";
 
 function PinSetter({ onPick, locked }: { onPick: (point: Guess) => void; locked: boolean }) {
