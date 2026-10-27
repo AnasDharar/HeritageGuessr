@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useGameStore } from "./components/GameStore";
 
 /* -------------------------------------------------------------------------- */
@@ -22,6 +22,17 @@ export default function Home() {
   const { start, hydrated } = useGameStore();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [showAboutModal, setShowAboutModal] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setShowAboutModal(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const begin = async () => {
     setBusy(true);
@@ -49,6 +60,46 @@ export default function Home() {
         ========================================================================
       */}
       <div className="max-w-[1240px] mx-auto bg-[#f5f4f0] border border-[#d4d2ca] shadow-sm">
+        
+        {/* ==================================================================== */}
+        {/* LANDING PAGE NAVBAR (VISIBLE ONLY ON LANDING PAGE)                   */}
+        {/* ==================================================================== */}
+        <header className="border-b border-[#d4d2ca] bg-[#f5f4f0] px-4 sm:px-8 py-3.5 flex items-center justify-between">
+          {/* Brand Mark */}
+          <div className="flex items-center gap-3">
+            <div className="w-2.5 h-2.5 bg-[#e53924]" />
+            <span className="font-condensed font-bold text-xl sm:text-2xl text-[#111111] tracking-wider uppercase">
+              HERITAGEGUESS
+            </span>
+            <span className="hidden md:inline font-mono-tech text-[10px] text-[#737373] tracking-widest uppercase border-l border-[#d4d2ca] pl-3">
+              ARCHIVAL GEOGRAPHY & VISION
+            </span>
+          </div>
+
+          {/* Navigation Items */}
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="hidden lg:flex items-center gap-1.5 font-mono-tech text-[10px] text-[#666666] tracking-wider uppercase bg-[#ffffff] border border-[#d4d2ca] px-2.5 py-1">
+              <span className="w-1.5 h-1.5 bg-[#199900] rounded-full animate-pulse" />
+              <span>100% OPEN SOURCE</span>
+            </div>
+
+            <button
+              onClick={() => setShowAboutModal(true)}
+              className="font-mono-tech text-xs tracking-wider uppercase border border-[#111111] bg-[#ffffff] hover:bg-[#111111] hover:text-[#ffffff] px-3 sm:px-4 py-1.5 transition-colors cursor-pointer"
+            >
+              ABOUT
+            </button>
+
+            <button
+              onClick={begin}
+              disabled={!hydrated || busy}
+              className="btn-brutalist-black text-xs px-3 sm:px-4 py-1.5 hidden sm:inline-flex"
+            >
+              <span>{busy ? "STARTING…" : "EXPEDITION"}</span>
+              <span className="text-[#e53924]">→</span>
+            </button>
+          </div>
+        </header>
         
         {/* ==================================================================== */}
         {/* HERO SECTION                                                         */}
@@ -583,6 +634,154 @@ export default function Home() {
         </section>
 
       </div>
+
+      {/* ==================================================================== */}
+      {/* ABOUT & OPEN SOURCE MANIFESTO MODAL                                   */}
+      {/* ==================================================================== */}
+      {showAboutModal && (
+        <div
+          className="fixed inset-0 z-50 bg-[#111111]/75 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
+          onClick={() => setShowAboutModal(false)}
+        >
+          <div
+            className="bg-[#f5f4f0] border-2 border-[#111111] max-w-3xl w-full p-6 sm:p-8 md:p-10 shadow-2xl relative max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between border-b border-[#d4d2ca] pb-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 bg-[#e53924]" />
+                <span className="font-mono-tech text-xs font-bold text-[#111111] tracking-widest uppercase">
+                  ABOUT HERITAGEGUESS // OPEN SOURCE MANIFESTO
+                </span>
+              </div>
+              <button
+                onClick={() => setShowAboutModal(false)}
+                className="font-mono-tech text-xs font-bold hover:text-[#e53924] p-1 cursor-pointer"
+              >
+                [✕ CLOSE]
+              </button>
+            </div>
+
+            {/* Mission & Audience Section */}
+            <div className="mb-8">
+              <span className="font-mono-tech text-[10px] text-[#e53924] font-bold tracking-widest uppercase">
+                01 / THE MISSION & AUDIENCE
+              </span>
+              <h3 className="font-condensed font-bold text-2xl sm:text-3xl text-[#111111] uppercase tracking-wide mt-1 mb-3">
+                MAKING ANCIENT WORLD HERITAGE ADDICTIVE FOR DIGITAL NATIVES.
+              </h3>
+              <p className="text-sm sm:text-base text-[#444444] leading-relaxed mb-3">
+                Ancient history and archaeological heritage are too often confined to dry textbook chapters and passive museum displays. HeritageGuess reframes cultural education for <strong className="text-[#111111]">younger audiences (Gen Z and digital natives)</strong> as an interactive, high-stakes geographic investigation.
+              </p>
+              <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+                By pairing authentic 19th-century survey plates with AI-guided observation and full-screen cartographic deduction, players develop genuine spatial intuition for global ancient civilizations—from monolithic Dravidian rock-cut temples to Mughal fortresses and ancient subterranean stepwells.
+              </p>
+            </div>
+
+            {/* Open Source Ecosystem Section */}
+            <div className="mb-8">
+              <div className="flex items-center justify-between border-b border-[#d4d2ca] pb-2 mb-4">
+                <span className="font-mono-tech text-[10px] text-[#e53924] font-bold tracking-widest uppercase">
+                  02 / PROUDLY POWERED BY OPEN SOURCE
+                </span>
+                <span className="font-mono-tech text-[10px] text-[#199900] font-bold tracking-widest uppercase">
+                  100% OPEN ECOSYSTEM
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Item 1 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>OPENSTREETMAP</span>
+                    <span className="text-[#199900]">FREE MAPS</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    Free, community-governed planetary cartography. No corporate surveillance or proprietary map lock-in.
+                  </p>
+                </div>
+
+                {/* Item 2 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>LEAFLET & REACT-LEAFLET</span>
+                    <span className="text-[#199900]">MAPPING ENGINE</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    The premier open-source JavaScript interactive mapping library, lightweight and hardware accelerated.
+                  </p>
+                </div>
+
+                {/* Item 3 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>WIKIMEDIA COMMONS</span>
+                    <span className="text-[#199900]">PUBLIC ARCHIVES</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    Archival 19th-century photographic plates preserved under open Public Domain and Creative Commons licenses.
+                  </p>
+                </div>
+
+                {/* Item 4 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>META LLAMA 3.3</span>
+                    <span className="text-[#199900]">OPEN WEIGHTS</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    Open-weights frontier reasoning model delivering real-time architectural visual deduction via the Groq LPU engine.
+                  </p>
+                </div>
+
+                {/* Item 5 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>NEXT.JS 16 & REACT 19</span>
+                    <span className="text-[#199900]">OPEN FRAMEWORK</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    Modern open-source React application framework with Turbopack and partial prefetching.
+                  </p>
+                </div>
+
+                {/* Item 6 */}
+                <div className="bg-[#ffffff] border border-[#d4d2ca] p-3.5">
+                  <div className="flex items-center justify-between font-mono-tech text-[10px] text-[#111111] font-bold mb-1">
+                    <span>TAILWIND CSS V4</span>
+                    <span className="text-[#199900]">STYLING ENGINE</span>
+                  </div>
+                  <p className="text-xs text-[#555555] leading-normal">
+                    Zero-runtime utility engine delivering the custom editorial brutalist architectural design system.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mathematical & Anti-Cheat Summary */}
+            <div className="p-4 bg-[#eae8e1] border border-[#d4d2ca] font-mono-tech text-[11px] text-[#444444] space-y-1 mb-6">
+              <div className="text-[#111111] font-bold uppercase">CRYPTOGRAPHIC & GEODESIC ARCHITECTURE</div>
+              <div>• Mathematical distance calculated via the Haversine great-circle formula.</div>
+              <div>• Zero client location leaks: sessions signed with server-side HMAC-SHA256 tokens.</div>
+              <div>• AI guardrails prevent prompt injection and coding off-topic queries.</div>
+            </div>
+
+            {/* Modal Actions */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-[#d4d2ca]">
+              <span className="font-mono-tech text-[10px] text-[#737373] tracking-widest uppercase">
+                HERITAGEGUESS // MIT LICENSE
+              </span>
+              <button
+                onClick={() => setShowAboutModal(false)}
+                className="btn-brutalist-black w-full sm:w-auto text-xs px-6 py-2"
+              >
+                RETURN TO EXPEDITIONS
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
